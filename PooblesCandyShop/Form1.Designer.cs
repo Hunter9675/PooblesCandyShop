@@ -37,6 +37,10 @@
             this.taxOutputLabel = new System.Windows.Forms.Label();
             this.subtotalOutputLabel = new System.Windows.Forms.Label();
             this.taxOutput = new System.Windows.Forms.Label();
+            this.pooble = new System.Windows.Forms.PictureBox();
+            this.errorLabel1 = new System.Windows.Forms.Label();
+            this.errorLabel2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pooble)).BeginInit();
             this.SuspendLayout();
             // 
             // candyInputLabel
@@ -132,11 +136,42 @@
             this.taxOutput.TabIndex = 9;
             this.taxOutput.Text = "\r\n";
             // 
+            // pooble
+            // 
+            this.pooble.Image = global::PooblesCandyShop.Properties.Resources.pooble;
+            this.pooble.Location = new System.Drawing.Point(384, 112);
+            this.pooble.Name = "pooble";
+            this.pooble.Size = new System.Drawing.Size(251, 320);
+            this.pooble.TabIndex = 10;
+            this.pooble.TabStop = false;
+            // 
+            // errorLabel1
+            // 
+            this.errorLabel1.AutoSize = true;
+            this.errorLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel1.Location = new System.Drawing.Point(380, 42);
+            this.errorLabel1.Name = "errorLabel1";
+            this.errorLabel1.Size = new System.Drawing.Size(0, 20);
+            this.errorLabel1.TabIndex = 11;
+            // 
+            // errorLabel2
+            // 
+            this.errorLabel2.AutoSize = true;
+            this.errorLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel2.Location = new System.Drawing.Point(380, 81);
+            this.errorLabel2.Name = "errorLabel2";
+            this.errorLabel2.Size = new System.Drawing.Size(0, 20);
+            this.errorLabel2.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(647, 444);
+            this.Controls.Add(this.errorLabel2);
+            this.Controls.Add(this.errorLabel1);
+            this.Controls.Add(this.pooble);
             this.Controls.Add(this.taxOutput);
             this.Controls.Add(this.subtotalOutputLabel);
             this.Controls.Add(this.taxOutputLabel);
@@ -148,6 +183,7 @@
             this.Controls.Add(this.candyInputLabel);
             this.Name = "Form1";
             this.Text = "Pooble\'s Candy Shop";
+            ((System.ComponentModel.ISupportInitialize)(this.pooble)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +200,9 @@
         private System.Windows.Forms.Label taxOutputLabel;
         private System.Windows.Forms.Label subtotalOutputLabel;
         private System.Windows.Forms.Label taxOutput;
+        private System.Windows.Forms.PictureBox pooble;
+        private System.Windows.Forms.Label errorLabel1;
+        private System.Windows.Forms.Label errorLabel2;
     }
 }
 
