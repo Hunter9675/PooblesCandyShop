@@ -31,8 +31,8 @@ namespace PooblesCandyShop
             {
                 numOfCandys = Convert.ToInt32(candyInput.Text);
                 pooble.Image = PooblesCandyShop.Properties.Resources.pooble;
-                errorLabel1.Text = "";
-                errorLabel2.Text = "";
+                errorLabel1.Text = "Thanks for shopping at";
+                errorLabel2.Text = "Pooble's Candy Shop.";
 
             }
             
@@ -41,6 +41,20 @@ namespace PooblesCandyShop
                 pooble.Image = PooblesCandyShop.Properties.Resources.poobleerror;
                 errorLabel1.Text = "You're confusing Pooble!";
                 errorLabel2.Text = "Please type a Number.";
+            }
+
+            if (numOfCandys < 0)
+            {
+                errorLabel1.Text = "You cant buy negitive candys!";
+                errorLabel2.Text = "";
+                pooble.Image = PooblesCandyShop.Properties.Resources.poobleerror;
+            }
+
+            else if (numOfCandys == 0)
+            {
+                errorLabel1.Text = "Well, Thanks for stopping by!";
+                errorLabel2.Text = "";
+
             }
 
             subtotal = candyPrice * numOfCandys;

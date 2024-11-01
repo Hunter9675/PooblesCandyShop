@@ -158,7 +158,7 @@
             // 
             this.errorLabel2.AutoSize = true;
             this.errorLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorLabel2.Location = new System.Drawing.Point(380, 81);
+            this.errorLabel2.Location = new System.Drawing.Point(380, 62);
             this.errorLabel2.Name = "errorLabel2";
             this.errorLabel2.Size = new System.Drawing.Size(0, 20);
             this.errorLabel2.TabIndex = 12;
